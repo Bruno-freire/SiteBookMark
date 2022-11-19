@@ -32,6 +32,7 @@ header {
   background-color: transparent;
   border: none;
   font-family: "Rubik";
+  cursor: pointer;
 }
 .right-header .btn-header:hover {
   color: hsl(0deg, 94%, 66%);

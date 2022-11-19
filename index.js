@@ -8,7 +8,8 @@ const btnFt3 = document.getElementById('btn-ft-3')
 const btnLinha1 = document.getElementById('btnLinha1')
 const btnLinha2 = document.getElementById('btnLinha2')
 const btnLinha3 = document.getElementById('btnLinha3')
-let button1 = 0
+//button1 ja vai inicar ativado
+let button1 = 1
 let button2 = 0
 let button3 = 0
 
@@ -34,7 +35,6 @@ function stringEvent(btnLinha,title,text){
   document.getElementById('titleEvent').innerText=title
   document.getElementById('textEvent').innerText=text
 }
-
 btnFt1.addEventListener('click', function(ev){
   //como btnFt termina com 1, 
   //eu faco a sequencia de botoes
