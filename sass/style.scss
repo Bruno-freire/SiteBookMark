@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+$redColor: hsl(0, 94%, 66%);
+$blueColor: hsl(231, 69%, 60%);
+$textColor: hsl(229, 8%, 60%);
+@mixin text-style($color,$text-align,$width) {
+  color:  $color;
+  text-align: $text-align;
+  width: $width;
+}
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+main{
+  width: 100%;
+  height: auto;
+  
+}
+header{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.left-header{
+  position: relative;
+  right: 120px;
+}
+.right-header{
+  display: flex;
+  column-gap: 25px;
+  .btn-header{
+    background-color: transparent;
+    border: none;
+    font-family: 'Rubik';
+  &:hover{
+    color: $redColor;
+    transition: 0.15s;
+  }
+  }
+  .login{
+    border: 2px solid $redColor;
+    background-color: $redColor;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 85px;
+    font-size: 13px;
+    &:hover{
+      transition: 0.2s;
+      color: $redColor;
+      background-color: white;
+    }
+  }
+}
+.bookmarkManager{
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+  .left-bm{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    row-gap: 20px;
+    #titulo1{
+      font-size: 45px;
+      width: 400px;
+      color: rgb(43, 43, 43);
+      margin: 0;
+    }
+    #texto1{
+      margin: 0;
+      font-size: 18px;
+      @include text-style($textColor, start, 450px)
+    }
+    .btn-bm{
+      width: auto;
+      height: auto;
+      display: flex;
+      column-gap: 15px;
+      #btn-bm-left{
+        border: 2px solid $blueColor;
+        background-color: $blueColor;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        height: 2.2rem;
+        width: 8.8rem;
+        font-family: 'Rubik';
+        cursor: pointer;
+        &:hover{
+          background-color: transparent;
+          color: $blueColor;
+          transition: 0.2s;
+        }
+      }
+      #btn-bm-right{
+        color: hsl(229, 7%, 51%);
+        border: 2px solid rgb(248, 248, 248);
+        background-color: rgb(248, 248, 248);
+        border-radius: 5px;
+        height: 2.2rem;
+        width: 8.8rem;
+        font-family: 'Rubik';
+        box-shadow: 0px 5px 4px -3px rgb(211, 211, 211);
+        cursor: pointer;
+        &:hover{
+          transition: 0.2s;
+          background-color: transparent;
+          box-shadow: none;
+          color: black;
+          border: 2px solid rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+  .right-bm{
+    width: auto;
+    height: auto;
+    #img-ilust{
+      width: 34.5rem;
+      height: auto;
+    }
+  }
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #titulo2{
+    font-size: 30px;
+    font-family: 'arial';
+    color: rgb(43, 43, 43);
+    text-align: center;
+
+  }
+  #texto2{
+    @include text-style($textColor, center, 460px)
+  }
+}
+.div-btn-ft{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 55px;
+  position: relative;
+  right: 25px;
+  .btn-ft{
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: $textColor;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      color: $redColor;
+    } 
+  } 
+}
+#btn-ft-3{
+  position: relative;
+  left: 18px;
+}
+.linha{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .btnLinha{
+    width: 200px;
+    height: auto;
+    border: 0px solid transparent;
+    border-bottom: 2px solid rgb(225, 223, 223);
+    background-color: transparent;
+  }
+}
+.txt{
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  margin-top: 50px;
+  .divRightEvent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #titleEvent{
+      font-size: 30px;
+      font-family: 'arial';
+    }
+    #textEvent{
+      @include text-style($textColor, start, 400px)
+    }
+    #btnInfo{
+      border: 2px solid $blueColor;
+        background-color: $blueColor;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        height: 2.2rem;
+        width: 6rem;
+        font-family: 'arial';
+        cursor: pointer;
+        margin-top: 12px;
+        &:hover{
+          background-color: transparent;
+          color: $blueColor;
+          transition: 0.2s;
+        }
+    }
+  }
+}
+#imgLeftEvent{
+  width: 25rem;
+}
+.ativado{
+  width: 200px;
+  height: auto;
+  border: 0px solid transparent;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+  cursor: pointer;
+}
+

@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.left-header {
+  position: relative;
+  right: 120px;
+}
+
+.right-header {
+  display: flex;
+  column-gap: 25px;
+}
+.right-header .btn-header {
+  background-color: transparent;
+  border: none;
+  font-family: "Rubik";
+}
+.right-header .btn-header:hover {
+  color: hsl(0deg, 94%, 66%);
+  transition: 0.15s;
+}
+.right-header .login {
+  border: 2px solid hsl(0deg, 94%, 66%);
+  background-color: hsl(0deg, 94%, 66%);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 85px;
+  font-size: 13px;
+}
+.right-header .login:hover {
+  transition: 0.2s;
+  color: hsl(0deg, 94%, 66%);
+  background-color: white;
+}
+
+.bookmarkManager {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+}
+.bookmarkManager .left-bm {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.bookmarkManager .left-bm #titulo1 {
+  font-size: 45px;
+  width: 400px;
+  color: rgb(43, 43, 43);
+  margin: 0;
+}
+.bookmarkManager .left-bm #texto1 {
+  margin: 0;
+  font-size: 18px;
+  color: hsl(229deg, 8%, 60%);
+  text-align: start;
+  width: 450px;
+}
+.bookmarkManager .left-bm .btn-bm {
+  width: auto;
+  height: auto;
+  display: flex;
+  column-gap: 15px;
+}
+.bookmarkManager .left-bm .btn-bm #btn-bm-left {
+  border: 2px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 8.8rem;
+  font-family: "Rubik";
+  cursor: pointer;
+}
+.bookmarkManager .left-bm .btn-bm #btn-bm-left:hover {
+  background-color: transparent;
+  color: hsl(231deg, 69%, 60%);
+  transition: 0.2s;
+}
+.bookmarkManager .left-bm .btn-bm #btn-bm-right {
+  color: hsl(229deg, 7%, 51%);
+  border: 2px solid rgb(248, 248, 248);
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 8.8rem;
+  font-family: "Rubik";
+  box-shadow: 0px 5px 4px -3px rgb(211, 211, 211);
+  cursor: pointer;
+}
+.bookmarkManager .left-bm .btn-bm #btn-bm-right:hover {
+  transition: 0.2s;
+  background-color: transparent;
+  box-shadow: none;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+}
+.bookmarkManager .right-bm {
+  width: auto;
+  height: auto;
+}
+.bookmarkManager .right-bm #img-ilust {
+  width: 34.5rem;
+  height: auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features #titulo2 {
+  font-size: 30px;
+  font-family: "arial";
+  color: rgb(43, 43, 43);
+  text-align: center;
+}
+.features #texto2 {
+  color: hsl(229deg, 8%, 60%);
+  text-align: center;
+  width: 460px;
+}
+
+.div-btn-ft {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 55px;
+  position: relative;
+  right: 25px;
+}
+.div-btn-ft .btn-ft {
+  border: 0px solid transparent;
+  background-color: transparent;
+  color: hsl(229deg, 8%, 60%);
+  font-size: 16px;
+  cursor: pointer;
+}
+.div-btn-ft .btn-ft:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+
+#btn-ft-3 {
+  position: relative;
+  left: 18px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.linha .btnLinha {
+  width: 200px;
+  height: auto;
+  border: 0px solid transparent;
+  border-bottom: 2px solid rgb(225, 223, 223);
+  background-color: transparent;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  margin-top: 50px;
+}
+.txt .divRightEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.txt .divRightEvent #titleEvent {
+  font-size: 30px;
+  font-family: "arial";
+}
+.txt .divRightEvent #textEvent {
+  color: hsl(229deg, 8%, 60%);
+  text-align: start;
+  width: 400px;
+}
+.txt .divRightEvent #btnInfo {
+  border: 2px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 6rem;
+  font-family: "arial";
+  cursor: pointer;
+  margin-top: 12px;
+}
+.txt .divRightEvent #btnInfo:hover {
+  background-color: transparent;
+  color: hsl(231deg, 69%, 60%);
+  transition: 0.2s;
+}
+
+#imgLeftEvent {
+  width: 25rem;
+}
+
+.ativado {
+  width: 200px;
+  height: auto;
+  border: 0px solid transparent;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

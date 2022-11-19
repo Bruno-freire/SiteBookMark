@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <script src="index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="left-header">
+        <img src="./images/logo-bookmark.svg" alt="bookmark">
+      </div>
+      <div class="right-header">
+        <button class="btn-header">FEATURES</button>
+        <button class="btn-header">PRICING</button>
+        <button class="btn-header">CONTACT</button>
+        <button class="btn-header login" translate="no">LOGIN</button>
+      </div>
+    </header>
+    <section>
+      <div class="bookmarkManager">
+        <div class="left-bm">
+          <p id="titulo1"><strong>A Simple Bookmark Manager</strong></p>
+          <p id="texto1">A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="btn-bm">
+            <button id="btn-bm-left">Get it on Chrome</button>
+            <button id="btn-bm-right">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="right-bm">
+          <img id="img-ilust" src="./images/illustration-hero.svg" alt="hero">
+        </div>
+      </div>
+      <div class="features">
+        <p id="titulo2"><strong>Features</strong></p>
+        <p id="texto2">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="div-btn-ft">
+        <button class="btn-ft" id="btn-ft-1">Simple Bookmarking</button>
+        <button class="btn-ft" id="btn-ft-2">Speedy Searching</button>
+        <button class="btn-ft" id="btn-ft-3">Easy Sharing</button>
+      </div>
+      <div class="linha">
+        <button class="btnLinha" data-value="1" id="btnLinha1"></button>
+        <button class="btnLinha" data-value="2" id="btnLinha2"></button>
+        <button class="btnLinha" data-value="3" id="btnLinha3"></button>
+      </div>
+      <div class="txt">
+        <div class="divLeftEvent"><img id="imgLeftEvent" src="./images/illustration-features-tab-1.svg" alt=""></div>
+        <div class="divRightEvent">
+          <p><strong id="titleEvent">Bookmark in one click</strong></p>
+          <p id="textEvent">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <span><button id="btnInfo">More Info</button></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dev_freire</a>.
+    </p>
+  </footer>
+</body>
+</html>
