@@ -56,7 +56,7 @@ header{
     }
   }
 }
-.bookmarkManager{
+.firstContent{
   display: flex;
   justify-content: center;
   column-gap: 35px;
@@ -65,13 +65,13 @@ header{
     margin-top: 40px;
     flex-direction: column;
     row-gap: 20px;
-    #titulo1{
+    #titleFirstContent{
       font-size: 45px;
       width: 400px;
       color: rgb(43, 43, 43);
       margin: 0;
     }
-    #texto1{
+    #textFirstContent{
       margin: 0;
       font-size: 18px;
       @include text-style($textColor, start, 450px)
@@ -125,18 +125,18 @@ header{
     }
   }
 }
-.features{
+.secondContent{
   display: flex;
   flex-direction: column;
   align-items: center;
-  #titulo2{
+  #titleSecondContent{
     font-size: 30px;
-    font-family: 'arial';
+    font-family: 'rubik';
     color: rgb(43, 43, 43);
     text-align: center;
 
   }
-  #texto2{
+  #textSecondContent{
     @include text-style($textColor, center, 460px)
   }
 }
@@ -185,7 +185,7 @@ header{
     justify-content: center;
     #titleEvent{
       font-size: 30px;
-      font-family: 'arial';
+      font-family: 'rubik';
     }
     #textEvent{
       @include text-style($textColor, start, 400px)
@@ -197,7 +197,7 @@ header{
         border-radius: 5px;
         height: 2.2rem;
         width: 6rem;
-        font-family: 'arial';
+        font-family: 'rubik';
         cursor: pointer;
         margin-top: 12px;
         &:hover{
@@ -211,12 +211,38 @@ header{
 #imgLeftEvent{
   width: 25rem;
 }
-.ativado{
+.activated{
   width: 200px;
   height: auto;
   border: 0px solid transparent;
   border-bottom: 3px solid red;
   background-color: transparent;
   cursor: pointer;
+}
+.content3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #title3{
+    font-size: 26px;
+    font-family: 'Rubik';
+  }
+  .divCards{
+    display: flex;
+    gap: 100px;
+    .cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100px;
+      .imgCards{
+        width: 2rem;
+      }
+      .titleCards{
+        font-size: 23px;
+        font-family: 'Rubik';
+      }
+    }
+  }
 }
 
