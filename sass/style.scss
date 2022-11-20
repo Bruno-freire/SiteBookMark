@@ -129,7 +129,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
   #titleSecondContent{
     font-size: 30px;
     font-family: 'rubik';
@@ -224,7 +224,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
   #titleThirdContent{
     font-size: 26px;
     font-family: 'Rubik';
@@ -292,4 +292,29 @@ header{
     }
   }
 }
-
+.fourthContent{
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+  flex-direction: column;
+  height: auto;
+  #titleFourthContent{
+    font-size: 26px;
+    font-family: 'Rubik';
+  }
+  #textFourthContent{
+    font-family: 'Rubik';
+    @include text-style($textColor, center, 500px)
+  }
+  .questions{
+    width: 20rem;
+    .boxQuestions{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .arrow{
+        padding-right: 10px;
+      }
+    }
+  }
+}

@@ -128,7 +128,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .secondContent #titleSecondContent {
   font-size: 30px;
@@ -233,7 +233,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .thirdContent #titleThirdContent {
   font-size: 26px;
@@ -304,6 +304,35 @@ header {
   background-color: transparent;
   color: hsl(231deg, 69%, 60%);
   transition: 0.2s;
+}
+
+.fourthContent {
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+  flex-direction: column;
+  height: auto;
+}
+.fourthContent #titleFourthContent {
+  font-size: 26px;
+  font-family: "Rubik";
+}
+.fourthContent #textFourthContent {
+  font-family: "Rubik";
+  color: hsl(229deg, 8%, 60%);
+  text-align: center;
+  width: 500px;
+}
+.fourthContent .questions {
+  width: 20rem;
+}
+.fourthContent .questions .boxQuestions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fourthContent .questions .boxQuestions .arrow {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
