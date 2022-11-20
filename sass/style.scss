@@ -129,6 +129,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
   #titleSecondContent{
     font-size: 30px;
     font-family: 'rubik';
@@ -219,28 +220,74 @@ header{
   background-color: transparent;
   cursor: pointer;
 }
-.content3{
+.thirdContent{
   display: flex;
   flex-direction: column;
   align-items: center;
-  #title3{
+  margin-top: 100px;
+  #titleThirdContent{
     font-size: 26px;
     font-family: 'Rubik';
   }
+  #textThirdContent{
+    @include text-style($textColor, center, 500px)
+  }
   .divCards{
     display: flex;
-    gap: 100px;
+    gap: 40px;
+    #secondCard{
+      position: relative;
+      top: 40px; 
+    }
+    #thirdCard{
+      position: relative;
+      top: 80px;
+    }
     .cards{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100px;
+      justify-content: center;
+      width: 13rem;
+      height: 16rem;
+      margin-top: 40px;
+      border: 2px solid rgb(248, 248, 248);
+      background-color: rgb(248, 248, 248);
+      row-gap: 5px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px -3px rgb(197, 204, 226);
       .imgCards{
-        width: 2rem;
+        width: 4.5rem;
       }
       .titleCards{
-        font-size: 23px;
+        font-size: 14px;
         font-family: 'Rubik';
+      }
+      .textCards{
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-family: 'Rubik';
+        @include text-style($textColor, center, auto)
+      }
+      .dots{
+        width: 100%;
+        margin: 10px;
+      }
+      .btnCards{
+        border: 2px solid $blueColor;
+        background-color: $blueColor;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        height: 2.2rem;
+        width: 85%;
+        font-family: 'Rubik';
+        cursor: pointer;
+        &:hover{
+          background-color: transparent;
+          color: $blueColor;
+          transition: 0.2s;
+        }
       }
     }
   }
