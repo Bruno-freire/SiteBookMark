@@ -161,6 +161,7 @@ header {
   color: hsl(229deg, 8%, 60%);
   font-size: 16px;
   cursor: pointer;
+  padding: 5px;
 }
 .div-btn-ft .btn-ft:hover {
   color: hsl(0deg, 94%, 66%);
@@ -304,6 +305,7 @@ header {
   width: 85%;
   font-family: "Rubik";
   cursor: pointer;
+  padding: 5px;
 }
 .thirdContent .divCards .cards .btnCards:hover {
   background-color: transparent;
@@ -376,6 +378,9 @@ header {
 .fourthContent #moreInfo {
   border: 2px solid hsl(231deg, 69%, 60%);
   background-color: hsl(231deg, 69%, 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   border-radius: 5px;
   height: 2.2rem;
@@ -384,6 +389,7 @@ header {
   cursor: pointer;
   margin-top: 48px;
   margin-bottom: 120px;
+  padding: 5px;
 }
 .fourthContent #moreInfo:hover {
   background-color: transparent;
