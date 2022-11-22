@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+:root {
+  --opacity--left: 1;
+  --opacity--rigth: 0;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -179,6 +184,15 @@ header {
   background-color: transparent;
 }
 
+.activated {
+  width: 200px;
+  height: auto;
+  border: 0px solid transparent;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .txt {
   display: flex;
   justify-content: center;
@@ -218,15 +232,6 @@ header {
 
 #imgLeftEvent {
   width: 25rem;
-}
-
-.activated {
-  width: 200px;
-  height: auto;
-  border: 0px solid transparent;
-  border-bottom: 3px solid red;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .thirdContent {
@@ -314,25 +319,82 @@ header {
   height: auto;
 }
 .fourthContent #titleFourthContent {
-  font-size: 26px;
+  font-size: 28px;
   font-family: "Rubik";
 }
 .fourthContent #textFourthContent {
   font-family: "Rubik";
+  font-size: 17px;
   color: hsl(229deg, 8%, 60%);
   text-align: center;
   width: 500px;
 }
 .fourthContent .questions {
-  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
 }
 .fourthContent .questions .boxQuestions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
-.fourthContent .questions .boxQuestions .arrow {
-  padding-right: 10px;
+.fourthContent .questions .btnQuestions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid rgb(225, 225, 225);
+  border-bottom: 1px solid rgb(225, 225, 225);
+  cursor: pointer;
+}
+.fourthContent .questions .btnQuestions .leftArrow {
+  position: relative;
+  left: 34px;
+  opacity: var(--opacity--left);
+}
+.fourthContent .questions .btnQuestions .rigthArrow {
+  opacity: var(--opacity--rigth);
+}
+.fourthContent .questions .titleQuestion {
+  font-family: "rubik";
+  font-size: 17px;
+}
+.fourthContent .questions .titleQuestion:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+.fourthContent .questions .paragraph {
+  font-size: 13px;
+  word-spacing: 1px;
+  line-height: 1.59rem;
+  padding-left: 2px;
+  font-family: "rubik";
+  color: rgb(130, 130, 130);
+  text-align: start;
+  width: auto;
+}
+.fourthContent #moreInfo {
+  border: 2px solid hsl(231deg, 69%, 60%);
+  background-color: hsl(231deg, 69%, 60%);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 6rem;
+  font-family: "Rubik";
+  cursor: pointer;
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+.fourthContent #moreInfo:hover {
+  background-color: transparent;
+  color: hsl(231deg, 69%, 60%);
+  transition: 0.2s;
+}
+
+#secondSection {
+  background-color: hsl(231deg, 69%, 60%);
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

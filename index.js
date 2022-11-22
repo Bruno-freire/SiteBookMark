@@ -9,22 +9,22 @@ const btnLinha1 = document.getElementById('btnLinha1')
 const btnLinha2 = document.getElementById('btnLinha2')
 const btnLinha3 = document.getElementById('btnLinha3')
 //firstLineActivated ja vai inicar activated
-let firstLineActivated = 1
-let secondLineActivated = 0
-let thirdLineActivated = 0
+let firstLineActivated = true
+let secondLineActivated = false
+let thirdLineActivated = false
 
 function removeClassActivated(firstLine,btnLinha1,btnFt1,secondLine,btnLinha2,btnFt2){
-  if(firstLine == 1){
+  if(firstLine == true){
     btnLinha1.classList.remove('activated')
     btnLinha1.classList.add('btnLinha')
     btnFt1.style.color = 'hsl(229deg, 8%, 60%)'
-    firstLine = 0
+    firstLine = false
   }
-  if(secondLine == 1){
+  if(secondLine == true){
     btnLinha2.classList.remove('activated')
     btnLinha2.classList.add('btnLinha')
     btnFt2.style.color = 'hsl(229deg, 8%, 60%)'
-    secondLine = 0
+    secondLine = false
   }
 }
 
@@ -55,4 +55,52 @@ btnFt3.addEventListener('click', function(ev){
   ev.currentTarget.style.color = "black"
   stringEvent(btnLinha3,'Share your bookmarks','Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.')
   thirdLineActivated=1
+})
+
+const firstArrow = document.getElementById('firstArrow')
+const secondArrow = document.getElementById('secondArrow')
+const thirdArrow = document.getElementById('thirdArrow')
+const fourthArrow = document.getElementById('fourthArrow')
+const arrowArray = [firstArrow,secondArrow,thirdArrow,fourthArrow]
+
+let firstArrowAndBtnActivated = 0
+let secondArrowAndBtnActivated = 0
+let thirdArrowAndBtnActivated = 0
+let fourthArrowAndBtnActivated = 0
+const arrowBtnArray = [firstArrowAndBtnActivated, secondArrowAndBtnActivated, thirdArrowAndBtnActivated, fourthArrowAndBtnActivated]
+
+let paragraphIndex = 0
+function addParagraph(text,questionPosition){
+  const paragraph = document.createElement('p')
+  paragraph.innerText = text
+  paragraph.id = "paragraph-"+questionPosition
+  paragraph.classList = "paragraph"
+  return paragraph
+}
+function enableOrDisableButton(position,namePosition,text){
+  const arrowBtn = arrowBtnArray[position - 1]
+  if(arrowBtn == 0){
+    document.getElementById(namePosition+'Question').appendChild(addParagraph(text,namePosition))
+    arrowBtnArray[position - 1] = 1
+    document.getElementById(namePosition+"ArrowRigth").style.opacity= "1"
+    document.getElementById(namePosition+"ArrowLeft").style.opacity = "0"
+  }
+  else{
+    document.querySelector("#paragraph-"+namePosition).remove()
+    document.getElementById(namePosition+"ArrowRigth").style.opacity = "0"
+    document.getElementById(namePosition+"ArrowLeft").style.opacity = "1"
+    arrowBtnArray[position - 1] = 0
+  }
+}
+document.getElementById('firstBtnQuestion').addEventListener('click', function(ev){
+  enableOrDisableButton(1,'first',"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.")
+})
+document.getElementById('secondBtnQuestion').addEventListener('click', function(ev){
+  enableOrDisableButton(2,"second","Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.")
+})
+document.getElementById('thirdBtnQuestion').addEventListener('click', function(ev){
+  enableOrDisableButton(3,"third","Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.")
+})
+document.getElementById('fourthBtnQuestion').addEventListener('click', function(ev){
+  enableOrDisableButton(4,"fourth","Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.")
 })

@@ -1,140 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Frontend Mentor | Bookmark landing page</title>
-  <script src="index.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <div class="left-header">
-        <img src="./images/logo-bookmark.svg" alt="bookmark">
-      </div>
-      <div class="right-header">
-        <button class="btn-header">FEATURES</button>
-        <button class="btn-header">PRICING</button>
-        <button class="btn-header">CONTACT</button>
-        <button class="btn-header login" translate="no">LOGIN</button>
-      </div>
-    </header>
-    <section>
-      <div class="firstContent">
-        <div class="left-bm">
-          <p id="titleFirstContent"><strong>A Simple Bookmark Manager</strong></p>
-          <p id="textFirstContent">A clean and simple interface to organize your favourite websites. Open a new 
-            browser tab and see your sites load instantly. Try it for free.</p>
-          <div class="btn-bm">
-            <button id="btn-bm-left">Get it on Chrome</button>
-            <button id="btn-bm-right">Get it on Firefox</button>
-          </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <script src="index.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="left-header">
+          <img src="./images/logo-bookmark.svg" alt="bookmark" />
         </div>
-        <div class="right-bm">
-          <img id="img-ilust" src="./images/illustration-hero.svg" alt="hero">
+        <div class="right-header">
+          <button class="btn-header">FEATURES</button>
+          <button class="btn-header">PRICING</button>
+          <button class="btn-header">CONTACT</button>
+          <button class="btn-header login" translate="no">LOGIN</button>
         </div>
-      </div>
-      <div class="secondContent">
-        <p id="titleSecondContent"><strong>Features</strong></p>
-        <p id="textSecondContent">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-      </div>
-      <div class="div-btn-ft">
-        <button class="btn-ft" id="btn-ft-1" style="color: black;">Simple Bookmarking</button>
-        <button class="btn-ft" id="btn-ft-2">Speedy Searching</button>
-        <button class="btn-ft" id="btn-ft-3">Easy Sharing</button>
-      </div>
-      <div class="linha">
-        <button class="activated" data-value="1" id="btnLinha1"></button>
-        <button class="btnLinha" data-value="2" id="btnLinha2"></button>
-        <button class="btnLinha" data-value="3" id="btnLinha3"></button>
-      </div>
-      <div class="txt">
-        <div class="divLeftEvent"><img id="imgLeftEvent" src="./images/illustration-features-tab-1.svg" alt=""></div>
-        <div class="divRightEvent">
-          <p><strong id="titleEvent">Bookmark in one click</strong></p>
-          <p id="textEvent">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-          <span><button id="btnInfo">More Info</button></span>
-        </div>
-      </div>
-      <div class="thirdContent">
-        <p id="titleThirdContent"><strong>Download the extension</strong></p>
-        <p id="textThirdContent">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-          got a favourite you’d like us to prioritize.</p>
-        <div class="divCards">
-          <div class="cards">
-            <img class="imgCards" src="./images/logo-chrome.svg" alt="Chrome">
-            <p class="titleCards"><strong>Add to Chrome</strong></p>
-            <p class="textCards">Minimum version 62</p>
-            <img class="dots" src="./images/bg-dots.svg" alt="dots">
-            <button class="btnCards">Add & Install extension</button>
-          </div>
-          <div class="cards" id="secondCard">
-            <img class="imgCards" src="./images/logo-firefox.svg" alt="Firefox">
-            <p class="titleCards"><strong>Add to Firefox</strong></p>
-            <p class="textCards">Minimum version 55</p>
-            <img class="dots" src="./images/bg-dots.svg" alt="dots">
-            <button class="btnCards">Add & Install extension</button>
-          </div>
-          <div class="cards" id="thirdCard">
-            <img class="imgCards" src="./images/logo-opera.svg" alt="Opera">
-            <p class="titleCards"><strong>Add to Opera</strong></p>
-            <p class="textCards">Minimum version 46</p>
-            <img class="dots" src="./images/bg-dots.svg" alt="dots">
-            <button class="btnCards">Add & Install extension</button>
-          </div>
-        </div>
-      </div>
-      <div class="fourthContent">
-        <p id="titleFourthContent"><strong>Frequently Asked Questions</strong></p>
-        <p id="textFourthContent">Here are some of our FAQs. If you have any other questions you’d like 
-          answered please feel free to email us.</p>
-        <div class="questions">
-          <div class="firstQuestion">
-            <div class="boxQuestions">
-              <p class="titleFirstQuestion">What is Bookmark?</p>
-              <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
+      </header>
+      <section>
+        <div class="firstContent">
+          <div class="left-bm">
+            <p id="titleFirstContent">
+              <strong>A Simple Bookmark Manager</strong>
+            </p>
+            <p id="textFirstContent">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="btn-bm">
+              <button id="btn-bm-left">Get it on Chrome</button>
+              <button id="btn-bm-right">Get it on Firefox</button>
             </div>
-            <p class="textFirstQuestion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
           </div>
-          <div class="secondQuestion">
-            <div class="boxQuestions">
-              <p class="titleSecondQuestion">How can I request a new browser?</p>
-              <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
-            </div>
-            <p class="textSecondQuestion"></p>
-          </div>
-          <div class="thirdQuestion">
-            <div class="boxQuestions">
-              <p class="titleThirdQuestion">Is there a mobile app?</p>
-              <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
-            </div>
-            <p class="textThirdQuestion"></p>
-          </div>
-          <div class="fourthQuestion">
-            <div class="boxQuestions">
-              <p class="titleFourthQuestion">What about other Chromium browsers?</p>
-              <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
-            </div>
-            <p class="textFourthQuestion"></p>
+          <div class="right-bm">
+            <img
+              id="img-ilust"
+              src="./images/illustration-hero.svg"
+              alt="hero"
+            />
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <!-- <p class="attribution">
+        <div class="secondContent">
+          <p id="titleSecondContent"><strong>Features</strong></p>
+          <p id="textSecondContent">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <div class="div-btn-ft">
+          <button class="btn-ft" id="btn-ft-1" style="color: black">
+            Simple Bookmarking
+          </button>
+          <button class="btn-ft" id="btn-ft-2">Speedy Searching</button>
+          <button class="btn-ft" id="btn-ft-3">Easy Sharing</button>
+        </div>
+        <div class="linha">
+          <button class="activated" data-value="1" id="btnLinha1"></button>
+          <button class="btnLinha" data-value="2" id="btnLinha2"></button>
+          <button class="btnLinha" data-value="3" id="btnLinha3"></button>
+        </div>
+        <div class="txt">
+          <div class="divLeftEvent">
+            <img
+              id="imgLeftEvent"
+              src="./images/illustration-features-tab-1.svg"
+              alt=""
+            />
+          </div>
+          <div class="divRightEvent">
+            <p><strong id="titleEvent">Bookmark in one click</strong></p>
+            <p id="textEvent">
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <span><button id="btnInfo">More Info</button></span>
+          </div>
+        </div>
+        <div class="thirdContent">
+          <p id="titleThirdContent"><strong>Download the extension</strong></p>
+          <p id="textThirdContent">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+          <div class="divCards">
+            <div class="cards">
+              <img
+                class="imgCards"
+                src="./images/logo-chrome.svg"
+                alt="Chrome"
+              />
+              <p class="titleCards"><strong>Add to Chrome</strong></p>
+              <p class="textCards">Minimum version 62</p>
+              <img class="dots" src="./images/bg-dots.svg" alt="dots" />
+              <button class="btnCards">Add & Install extension</button>
+            </div>
+            <div class="cards" id="secondCard">
+              <img
+                class="imgCards"
+                src="./images/logo-firefox.svg"
+                alt="Firefox"
+              />
+              <p class="titleCards"><strong>Add to Firefox</strong></p>
+              <p class="textCards">Minimum version 55</p>
+              <img class="dots" src="./images/bg-dots.svg" alt="dots" />
+              <button class="btnCards">Add & Install extension</button>
+            </div>
+            <div class="cards" id="thirdCard">
+              <img class="imgCards" src="./images/logo-opera.svg" alt="Opera" />
+              <p class="titleCards"><strong>Add to Opera</strong></p>
+              <p class="textCards">Minimum version 46</p>
+              <img class="dots" src="./images/bg-dots.svg" alt="dots" />
+              <button class="btnCards">Add & Install extension</button>
+            </div>
+          </div>
+        </div>
+        <div class="fourthContent">
+          <p id="titleFourthContent">
+            <strong>Frequently Asked Questions</strong>
+          </p>
+          <p id="textFourthContent">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+          <div class="questions">
+            <div class="boxQuestions" id="firstQuestion">
+              <button class="btnQuestions" id="firstBtnQuestion">
+                <p class="titleQuestion">What is Bookmark?</p>
+                <div class="divArrow">
+                  <img
+                  class="leftArrow"
+                  id="firstArrowLeft"
+                  src="./images/icon-arrow.png"
+                  alt="arrow"
+                />
+                <img  class="rigthArrow" id="firstArrowRigth" src="./images/arrow-activated.png"/>
+                </div>
+              </button>
+            </div>
+            <div class="boxQuestions" id="secondQuestion">
+              <button class="btnQuestions" id="secondBtnQuestion">
+                <p class="titleQuestion">
+                  How can I request a new browser?
+                </p>
+                <div class="divArrow">
+                  <img
+                  class="leftArrow"
+                  id="secondArrowLeft"
+                  src="./images/icon-arrow.png"
+                  alt="arrow"
+                />
+                <img class="rigthArrow" id="secondArrowRigth" src="./images/arrow-activated.png"/>
+                </div>
+              </button>
+            </div>
+            <div class="boxQuestions" id="thirdQuestion">
+              <button class="btnQuestions" id="thirdBtnQuestion">
+                <p class="titleQuestion">Is there a mobile app?</p>
+                <div class="divArrow">
+                  <img
+                  class="leftArrow"
+                  id="thirdArrowLeft"
+                  src="./images/icon-arrow.png"
+                  alt="arrow"
+                />
+                <img class="rigthArrow"  id="thirdArrowRigth"src="./images/arrow-activated.png"/>
+                </div>
+              </button>
+            </div>
+            <div class="boxQuestions" id="fourthQuestion">
+              <button class="btnQuestions" id="fourthBtnQuestion">
+                <p class="titleQuestion">
+                  What about other Chromium browsers?
+                </p>
+                <div class="divArrow">
+                  <img
+                  class="leftArrow"
+                  id="fourthArrowLeft"
+                  src="./images/icon-arrow.png"
+                  alt="arrow"
+                />
+                <img class="rigthArrow" id="fourthArrowRigth" src="./images/arrow-activated.png"/>
+                </div>
+              </button>
+            </div>            
+          </div>
+          <button id="moreInfo">More Info</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="secondSection">
+        <div class="contentSecondSection">
+          <p></p>
+          <p></p>
+          <div class="btnSecondSection">
+            <input type="email" placeholder="example@gmail.com">
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </section>
+     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Dev_freire</a>.
-    </p> -->
-  </footer>
-</body>
+    </p>
+    </footer>
+  </body>
 </html>

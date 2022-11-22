@@ -2,6 +2,10 @@
 $redColor: hsl(0, 94%, 66%);
 $blueColor: hsl(231, 69%, 60%);
 $textColor: hsl(229, 8%, 60%);
+:root{
+  --opacity--left: 1;
+  --opacity--rigth: 0;
+}
 @mixin text-style($color,$text-align,$width) {
   color:  $color;
   text-align: $text-align;
@@ -175,6 +179,14 @@ header{
     background-color: transparent;
   }
 }
+.activated{
+  width: 200px;
+  height: auto;
+  border: 0px solid transparent;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+  cursor: pointer;
+}
 .txt{
   display: flex;
   justify-content: center;
@@ -212,14 +224,7 @@ header{
 #imgLeftEvent{
   width: 25rem;
 }
-.activated{
-  width: 200px;
-  height: auto;
-  border: 0px solid transparent;
-  border-bottom: 3px solid red;
-  background-color: transparent;
-  cursor: pointer;
-}
+
 .thirdContent{
   display: flex;
   flex-direction: column;
@@ -299,22 +304,76 @@ header{
   flex-direction: column;
   height: auto;
   #titleFourthContent{
-    font-size: 26px;
+    font-size: 28px;
     font-family: 'Rubik';
   }
   #textFourthContent{
     font-family: 'Rubik';
+    font-size: 17px;
     @include text-style($textColor, center, 500px)
   }
   .questions{
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
     .boxQuestions{
+      width: 100%;
+    }
+    .btnQuestions{
       display: flex;
-      align-items: center;
+      width: 100%;
       justify-content: space-between;
-      .arrow{
-        padding-right: 10px;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      border-top: 1px solid rgb(225, 225, 225);
+      border-bottom: 1px solid rgb(225, 225, 225);
+      cursor: pointer;
+      .leftArrow{
+        position: relative;
+        left: 34px;
+        opacity: var(--opacity--left);
+      }
+      .rigthArrow{
+        opacity: var(--opacity--rigth);
       }
     }
+    .titleQuestion{
+      font-family: 'rubik';
+      font-size: 17px;
+      &:hover{
+        color: $redColor;
+      }
+    }
+    .paragraph{
+      font-size: 13px;
+      word-spacing: 1px;
+      line-height: 1.59rem;
+      padding-left: 2px;
+      font-family: "rubik";
+      @include text-style(rgb(130, 130, 130), start, auto)
+    }
   }
+  #moreInfo{
+    border: 2px solid $blueColor;
+      background-color: $blueColor;
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      height: 2.2rem;
+      width: 6rem;
+      font-family: 'Rubik';
+      cursor: pointer;
+      margin-top: 48px;
+      margin-bottom: 120px;
+      &:hover{
+        background-color: transparent;
+        color: $blueColor;
+        transition: 0.2s;
+      }
+  }
+}
+#secondSection{
+  background-color: $blueColor;
+  width: 100%;
+  height: auto;
 }
