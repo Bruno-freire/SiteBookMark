@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Rubik&display=swap");
 :root {
   --opacity--left: 1;
   --opacity--rigth: 0;
@@ -401,6 +401,72 @@ header {
   background-color: hsl(231deg, 69%, 60%);
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+#secondSection .contentSecondSection {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+#secondSection #firstTextSecondSection, #secondSection #secondTextSecondSection {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#secondSection #firstTextSecondSection {
+  font-family: "garamond";
+}
+#secondSection #secondTextSecondSection {
+  font-size: 26px;
+  width: 80%;
+  margin-top: 10px;
+  font-family: "rubik";
+}
+#secondSection .btnSecondSection {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+#secondSection .btnSecondSection #email {
+  width: 250px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 6px 15px;
+  font-family: "rubik";
+  box-shadow: 0 0 0 0;
+}
+#secondSection .btnSecondSection #email:focus {
+  outline-style: solid;
+}
+#secondSection .btnSecondSection #email::placeholder {
+  color: hsl(229deg, 8%, 60%);
+}
+#secondSection .btnSecondSection #contactUs {
+  background-color: hsl(0deg, 94%, 66%);
+  color: rgb(255, 255, 255);
+  border: 2px solid hsl(0deg, 94%, 66%);
+  border-radius: 4px;
+  width: 6rem;
+  padding: 10px;
+  font-size: 12px;
+  font-family: "rubik";
+  cursor: pointer;
+}
+#secondSection .btnSecondSection #contactUs:hover {
+  background-color: rgb(255, 252, 252);
+  color: hsl(0deg, 94%, 66%);
+  transition: 0.2s;
+}
+
+.secondContentSecondSection {
+  display: flex;
+  background-color: hsl(229deg, 31%, 21%);
+}
+.secondContentSecondSection .leftFooter {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

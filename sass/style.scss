@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Rubik&display=swap');
 $redColor: hsl(0, 94%, 66%);
 $blueColor: hsl(231, 69%, 60%);
 $textColor: hsl(229, 8%, 60%);
@@ -382,4 +382,72 @@ header{
   background-color: $blueColor;
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  .contentSecondSection{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  #firstTextSecondSection, #secondTextSecondSection{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  #firstTextSecondSection{
+    font-family: 'garamond';
+  }
+  #secondTextSecondSection{
+    font-size: 26px;
+    width: 80%;
+    margin-top: 10px;
+    font-family: 'rubik';
+  }
+  .btnSecondSection{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    #email{
+      width: 250px;
+      height: 25px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      padding: 6px 15px;
+      font-family: 'rubik';
+      box-shadow: 0 0 0 0;
+      &:focus{
+        outline-style: solid;
+      }
+      &::placeholder{
+        color: $textColor;
+      }
+    }
+    #contactUs{
+      background-color: $redColor;
+      color: rgb(255, 255, 255);
+      border: 2px solid $redColor;
+      border-radius: 4px;
+      width: 6rem;
+      padding: 10px;
+      font-size: 12px;
+      font-family: 'rubik';
+      cursor: pointer;
+      &:hover{
+        background-color: rgb(255, 252, 252);
+        color: $redColor;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+.secondContentSecondSection{
+  display: flex;
+  background-color: hsl(229, 31%, 21%);
+  .leftFooter{
+    display: flex;
+    #boookMark{
+    
+    }
+  }
 }
