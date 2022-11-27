@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Rubik&display=swap");
 :root {
   --opacity--left: 1;
@@ -437,12 +438,43 @@ header {
   padding: 6px 15px;
   font-family: "rubik";
   box-shadow: 0 0 0 0;
+  position: relative;
 }
 #secondSection .btnSecondSection #email:focus {
-  outline-style: solid;
+  outline-style: none;
 }
 #secondSection .btnSecondSection #email::placeholder {
   color: hsl(229deg, 8%, 60%);
+}
+#secondSection .btnSecondSection #email:invalid + span::before {
+  content: "✖";
+  position: relative;
+  right: 2rem;
+  top: 0.45rem;
+  color: hsl(0deg, 94%, 66%);
+  margin: -8px;
+}
+#secondSection .btnSecondSection #email:valid {
+  border: none;
+  border-style: solid;
+  border-color: rgb(4, 174, 4);
+  color: rgb(0, 0, 0);
+}
+#secondSection .btnSecondSection #email:valid + span::before {
+  content: "✓";
+  color: rgb(4, 174, 4);
+  position: relative;
+  right: 2rem;
+  top: 0.45rem;
+  margin: -8px;
+}
+#secondSection .btnSecondSection #iconError {
+  position: relative;
+  width: 1.5rem;
+  height: 1.7rem;
+  right: 40px;
+  top: 6px;
+  opacity: 1;
 }
 #secondSection .btnSecondSection #contactUs {
   background-color: hsl(0deg, 94%, 66%);
@@ -458,15 +490,107 @@ header {
 #secondSection .btnSecondSection #contactUs:hover {
   background-color: rgb(255, 252, 252);
   color: hsl(0deg, 94%, 66%);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .secondContentSecondSection {
   display: flex;
   background-color: hsl(229deg, 31%, 21%);
+  justify-content: space-around;
 }
 .secondContentSecondSection .leftFooter {
   display: flex;
+  column-gap: 25px;
+  position: relative;
+  right: 3.5rem;
+}
+.secondContentSecondSection .leftFooter .imgLeftFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+}
+.secondContentSecondSection .leftFooter .textLeftFooter {
+  color: rgb(255, 255, 255);
+  font-family: "rubik";
+  cursor: pointer;
+}
+.secondContentSecondSection .leftFooter .textLeftFooter:hover {
+  transition: 0.2s;
+  color: hsl(229deg, 8%, 60%);
+}
+.secondContentSecondSection .rigthFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+.secondContentSecondSection .rigthFooter :hover {
+  cursor: pointer;
+  transition: 0.2s;
+  filter: invert(50%);
+}
+
+@media (max-width: 1025px) {
+  header {
+    justify-content: space-around;
+  }
+  header .left-header {
+    position: initial;
+  }
+  .firstContent {
+    column-gap: 0;
+  }
+  .firstContent .right-bm #img-ilust {
+    width: 30rem;
+  }
+}
+@media (max-width: 930px) {
+  .firstContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .firstContent .left-bm {
+    align-items: center;
+    row-gap: 35px;
+  }
+  .firstContent .left-bm #titleFirstContent {
+    width: auto;
+    text-align: center;
+  }
+  .firstContent .left-bm #textFirstContent {
+    text-align: center;
+  }
+  .firstContent .left-bm .btn-bm {
+    align-items: center;
+    justify-content: center;
+  }
+  .txt {
+    flex-direction: column;
+    align-items: center;
+  }
+  .txt .divRightEvent {
+    align-items: center;
+  }
+  .txt .divRightEvent #textEvent {
+    text-align: center;
+    width: 500px;
+  }
+  .txt .divRightEvent .btn-ft {
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .divCards {
+    flex-direction: column;
+  }
+  .secondContentSecondSection .leftFooter {
+    position: initial;
+  }
+  .secondContentSecondSection .leftFooter .imgLeftFooter {
+    width: 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

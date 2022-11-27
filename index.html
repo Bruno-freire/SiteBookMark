@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +91,7 @@
             />
           </div>
           <div class="divRightEvent">
-            <p><strong id="titleEvent">Bookmark in one click</strong></p>
+            <p id="titleEvent"><strong >Bookmark in one click</strong></p>
             <p id="textEvent">
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
@@ -217,18 +217,21 @@
         <div class="contentSecondSection">
           <p id="firstTextSecondSection">35,000+ already joined</p>
           <p id="secondTextSecondSection">Stay up-to-date with what we’re doing</p>
-          <div class="btnSecondSection">
-            <input type="email" placeholder="Enter your email adress" id="email">
+          <form action="#" id="form" class="btnSecondSection">
+            <input type="email" placeholder="Enter your email adress" id="email" required max="50">
+            <span></span>
             <button id="contactUs">Contact Us</button>
-          </div>
+          </form>
         </div>
       </section>
       <div class="secondContentSecondSection">
         <div class="leftFooter">
-          <div><img src="./images/logo-bookmark.svg" alt="bookmark"></div>
-          <p>Features</p>
-          <p>Pricing</p>
-          <p>Contact</p>
+          <div class="imgLeftFooter">
+            <img id="imgLeftFooterid" src="./images/logo-bookmark.svg" alt="bookmark">
+          </div>
+          <p class="textLeftFooter">Features</p>
+          <p class="textLeftFooter">Pricing</p>
+          <p class="textLeftFooter">Contact</p>
         </div>
         <div class="rigthFooter">
           <img src="./images/icon-facebook.svg" alt="facebook">

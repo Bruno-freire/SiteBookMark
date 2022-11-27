@@ -104,3 +104,4 @@ document.getElementById('thirdBtnQuestion').addEventListener('click', function(e
 document.getElementById('fourthBtnQuestion').addEventListener('click', function(ev){
   enableOrDisableButton(4,"fourth","Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.")
 })
+
