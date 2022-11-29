@@ -98,6 +98,7 @@ header{
         font-family: 'Rubik';
         cursor: pointer;
         transition: 0.2s;
+        padding: 5px 5px;
         &:hover{
           background-color: transparent;
           color: $blueColor;
@@ -116,6 +117,7 @@ header{
         cursor: pointer;
         transition: 0.2s;
         &:hover{
+          padding: 5px 5px;
           transition: 0.2s;
           background-color: transparent;
           box-shadow: none;
@@ -220,6 +222,7 @@ header{
         cursor: pointer;
         margin-top: 12px;
         transition: 0.2s;
+        padding: 5px 5px;
         &:hover{
           background-color: transparent;
           color: $blueColor;
@@ -297,6 +300,7 @@ header{
         cursor: pointer;
         padding: 5px;
         transition: 0.2s;
+        padding: 5px 5px;
         &:hover{
           background-color: transparent;
           color: $blueColor;
@@ -377,7 +381,7 @@ header{
       cursor: pointer;
       margin-top: 48px;
       margin-bottom: 120px;
-      padding: 5px;
+      padding: 5px 5px;
       transition: 0.2s;
       &:hover{
         background-color: transparent;
@@ -465,6 +469,7 @@ header{
       font-family: 'rubik';
       cursor: pointer;
       transition: 0.3s;
+      padding: 5px 5px;
       &:hover{
         background-color: rgb(255, 252, 252);
         color: $redColor;
@@ -499,6 +504,7 @@ header{
       color: rgb(255, 255, 255);
       font-family: 'rubik';
       cursor: pointer;
+      padding: 5px 5px;
       &:hover{
         transition: 0.2s;
         color: $textColor;

@@ -101,6 +101,7 @@ header {
   font-family: "Rubik";
   cursor: pointer;
   transition: 0.2s;
+  padding: 5px 5px;
 }
 .firstContent .left-bm .btn-bm #btn-bm-left:hover {
   background-color: transparent;
@@ -120,6 +121,7 @@ header {
   transition: 0.2s;
 }
 .firstContent .left-bm .btn-bm #btn-bm-right:hover {
+  padding: 5px 5px;
   transition: 0.2s;
   background-color: transparent;
   box-shadow: none;
@@ -231,6 +233,7 @@ header {
   cursor: pointer;
   margin-top: 12px;
   transition: 0.2s;
+  padding: 5px 5px;
 }
 .txt .divRightEvent #btnInfo:hover {
   background-color: transparent;
@@ -314,6 +317,7 @@ header {
   cursor: pointer;
   padding: 5px;
   transition: 0.2s;
+  padding: 5px 5px;
 }
 .thirdContent .divCards .cards .btnCards:hover {
   background-color: transparent;
@@ -397,7 +401,7 @@ header {
   cursor: pointer;
   margin-top: 48px;
   margin-bottom: 120px;
-  padding: 5px;
+  padding: 5px 5px;
   transition: 0.2s;
 }
 .fourthContent #moreInfo:hover {
@@ -487,6 +491,7 @@ header {
   font-family: "rubik";
   cursor: pointer;
   transition: 0.3s;
+  padding: 5px 5px;
 }
 #secondSection .btnSecondSection #contactUs:hover {
   background-color: rgb(255, 252, 252);
@@ -522,6 +527,7 @@ header {
   color: rgb(255, 255, 255);
   font-family: "rubik";
   cursor: pointer;
+  padding: 5px 5px;
 }
 .secondContentSecondSection .midFooter .textLeftFooter:hover {
   transition: 0.2s;
