@@ -213,6 +213,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .txt .divRightEvent #titleEvent {
   font-size: 30px;
