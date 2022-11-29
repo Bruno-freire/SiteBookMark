@@ -409,10 +409,11 @@ header{
   }
   #firstTextSecondSection{
     font-family: 'garamond';
+    font-size: 1.5rem;
   }
   #secondTextSecondSection{
     font-size: 26px;
-    width: 80%;
+    width: 85%;
     margin-top: 10px;
     font-family: 'rubik';
   }
@@ -449,14 +450,6 @@ header{
         top: 0.45rem;
         margin: -8px;
       }
-    }
-    #iconError{
-      position: relative;
-      width: 1.5rem;
-      height: 1.7rem;
-      right: 40px;
-      top: 6px;
-      opacity: 1;
     }
     #contactUs{
       background-color: $redColor;
@@ -524,7 +517,9 @@ header{
     }
   }
 }
-
+.headerHamburguer{
+  opacity: 0;
+}
 @media(max-width: 1025px){
   header{
     justify-content: space-around;
@@ -552,6 +547,7 @@ header{
       }
       #textFirstContent{
         text-align: center;
+        width: 80%;
       }
       .btn-bm{
         align-items: center;
@@ -564,13 +560,24 @@ header{
     align-items: center;
     .divRightEvent {
       align-items: center;
+      row-gap: 30px;
       #textEvent{
         text-align: center;
-        width: 500px;
+        width: 450px;
       }
-      .btn-ft{
-        align-items: center;
+      #btnInfo{
+        width: 250px;
       }
+    }
+  }
+  .secondContentSecondSection{
+    .leftFooter{
+      position: initial;
+    } 
+  }
+  .fourthContent{
+    #moreInfo{
+      width: 250px;
     }
   }
 }
@@ -578,13 +585,100 @@ header{
   .divCards{
     flex-direction: column;
   }
-  .secondContentSecondSection .leftFooter{
-    position: initial;
-    .imgLeftFooter {
-      width: 5rem;
+}
+@media (max-width: 620px){
+  header{
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    position: relative;
+    right: 100px;
+  }
+  .headerHamburguer{
+    opacity: 1;
+    margin-bottom: 4em;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .left-header{
+      position: initial;
     }
   }
+  .firstContent .left-bm #titleFirstContent{
+    width: 80%;
+  }
+  .firstContent .right-bm #img-ilust{
+    width: 20rem;
+  }
+  .secondContent #textSecondContent{
+    width: 85%;
+  }
+  .txt .divRightEvent #textEvent{
+    width: 100%;
+  }
+  .div-btn-ft{
+    position: initial;
+    gap: 0;
+    width: 25rem;
+    margin: 0;
+    display: flex;
+  }
+  .linha{
+    display: flex;
+    position: relative;
+    left: 0.8em;
+    width: 96%;
+  }
+  .linha > *{
+    width: 100% !important;
+  }
+  .divLeftEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #imgLeftEvent{
+      width: 90%;
+    }
+  }
+  .thirdContent #textThirdContent{
+    width: 90%;
+  }
+  .fourthContent #textFourthContent{
+    width: 100%;
+  }
+  .fourthContent .questions{
+    width: 95%;
+  }
+  .secondContentSecondSection{
+    flex-direction: column;
+    align-items: center;
+    .midFooter{
+      position: initial;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .secondContentSecondSection .leftFooter .imgLeftFooter{
+    position: relative;
+    left: 60px;
+    margin-top: 25px;
+  }
+  .secondContentSecondSection .rigthFooter{
+    margin-bottom: 25px;
+  }
 }
-@media (max-width: 600px){
-  
+@media (max-width: 425px){
+  #secondSection .btnSecondSection {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  #secondSection .btnSecondSection #contactUs{
+    width: 100%;
+    height: 3em;
+  }
+  #secondSection .btnSecondSection #email:valid + span::before{
+    left: 265px;
+    right: 0;
+    top: -44px;
+  }
 }
