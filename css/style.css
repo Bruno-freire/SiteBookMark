@@ -183,6 +183,8 @@ header {
 
 #btn-ft-3 {
   position: relative;
+  max-width: 106px;
+  text-align: center;
   left: 18px;
 }
 

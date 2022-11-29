@@ -171,6 +171,7 @@ header{
     font-size: 16px;
     cursor: pointer;
     padding: 0px 5px;
+    
     &:hover{
       color: $redColor;
     } 
@@ -178,6 +179,8 @@ header{
 }
 #btn-ft-3{
   position: relative;
+  max-width: 106px;
+  text-align: center;
   left: 18px;
 }
 .linha{
