@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "rubik";
 }
 
 main {
@@ -39,10 +40,11 @@ header {
   border: none;
   font-family: "Rubik";
   cursor: pointer;
+  transition: 0.2s;
 }
 .right-header .btn-header:hover {
   color: hsl(0deg, 94%, 66%);
-  transition: 0.15s;
+  transition: 0.2s;
 }
 .right-header .login {
   border: 2px solid hsl(0deg, 94%, 66%);
@@ -51,6 +53,7 @@ header {
   border-radius: 5px;
   width: 85px;
   font-size: 13px;
+  transition: 0.2s;
 }
 .right-header .login:hover {
   transition: 0.2s;
@@ -71,7 +74,7 @@ header {
 }
 .firstContent .left-bm #titleFirstContent {
   font-size: 45px;
-  width: 400px;
+  width: 403px;
   color: rgb(43, 43, 43);
   margin: 0;
 }
@@ -97,6 +100,7 @@ header {
   width: 8.8rem;
   font-family: "Rubik";
   cursor: pointer;
+  transition: 0.2s;
 }
 .firstContent .left-bm .btn-bm #btn-bm-left:hover {
   background-color: transparent;
@@ -113,6 +117,7 @@ header {
   font-family: "Rubik";
   box-shadow: 0px 5px 4px -3px rgb(211, 211, 211);
   cursor: pointer;
+  transition: 0.2s;
 }
 .firstContent .left-bm .btn-bm #btn-bm-right:hover {
   transition: 0.2s;
@@ -225,6 +230,7 @@ header {
   font-family: "rubik";
   cursor: pointer;
   margin-top: 12px;
+  transition: 0.2s;
 }
 .txt .divRightEvent #btnInfo:hover {
   background-color: transparent;
@@ -307,6 +313,7 @@ header {
   font-family: "Rubik";
   cursor: pointer;
   padding: 5px;
+  transition: 0.2s;
 }
 .thirdContent .divCards .cards .btnCards:hover {
   background-color: transparent;
@@ -391,6 +398,7 @@ header {
   margin-top: 48px;
   margin-bottom: 120px;
   padding: 5px;
+  transition: 0.2s;
 }
 .fourthContent #moreInfo:hover {
   background-color: transparent;
@@ -446,14 +454,6 @@ header {
 #secondSection .btnSecondSection #email::placeholder {
   color: hsl(229deg, 8%, 60%);
 }
-#secondSection .btnSecondSection #email:invalid + span::before {
-  content: "✖";
-  position: relative;
-  right: 2rem;
-  top: 0.45rem;
-  color: hsl(0deg, 94%, 66%);
-  margin: -8px;
-}
 #secondSection .btnSecondSection #email:valid {
   border: none;
   border-style: solid;
@@ -486,6 +486,7 @@ header {
   font-size: 12px;
   font-family: "rubik";
   cursor: pointer;
+  transition: 0.3s;
 }
 #secondSection .btnSecondSection #contactUs:hover {
   background-color: rgb(255, 252, 252);
@@ -511,12 +512,18 @@ header {
   flex-direction: row;
   color: rgb(255, 255, 255);
 }
-.secondContentSecondSection .leftFooter .textLeftFooter {
+.secondContentSecondSection .midFooter {
+  display: flex;
+  column-gap: 40px;
+  position: relative;
+  right: 3.2rem;
+}
+.secondContentSecondSection .midFooter .textLeftFooter {
   color: rgb(255, 255, 255);
   font-family: "rubik";
   cursor: pointer;
 }
-.secondContentSecondSection .leftFooter .textLeftFooter:hover {
+.secondContentSecondSection .midFooter .textLeftFooter:hover {
   transition: 0.2s;
   color: hsl(229deg, 8%, 60%);
 }
@@ -525,6 +532,7 @@ header {
   justify-content: center;
   align-items: center;
   column-gap: 25px;
+  transition: 0.2s;
 }
 .secondContentSecondSection .rigthFooter :hover {
   cursor: pointer;
