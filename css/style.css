@@ -720,6 +720,9 @@ header {
     text-align: start;
     max-width: 10em;
   }
+  .firstContent .left-bm #titleFirstContent {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
