@@ -183,9 +183,10 @@ header{
     border-bottom: 2px solid rgb(225, 223, 223);
     background-color: transparent;
   }
-.buttonsQuestions{
+.buttonsEvent{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .activated{
   width: 100%;
@@ -621,10 +622,6 @@ header{
   }
   .div-btn-ft{
     position: initial;
-    gap: 0;
-    width: 25rem;
-    margin: 0;
-    display: flex;
   }
   .linha{
     display: flex;
@@ -670,6 +667,21 @@ header{
     margin-bottom: 25px;
   }
 }
+@media (max-width: 484px){
+  .div-btn-ft{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    top: 5em;
+    width: auto;
+  }
+  .linha{
+    opacity: 0;
+  }
+  .buttonsEvent{
+    width: 13em;
+  }
+}
 @media (max-width: 426px){
   #secondSection .btnSecondSection {
     flex-direction: column;
@@ -687,19 +699,5 @@ header{
   .fourthContent .questions .titleQuestion{
   text-align: start;
     max-width: 10em;
-  }
-  .div-btn-ft{
-    flex-direction: column;
-    align-items: center;
-    row-gap: 25px;
-    top: 5em;
-    width: auto;
-  }
-  .linha{
-    opacity: 0;
-  }
-  .buttonsQuestions{
-    align-items: center;
-    width: 13em;
   }
 }
