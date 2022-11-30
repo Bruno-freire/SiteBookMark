@@ -704,3 +704,9 @@ header{
     width: 95%;
   }
 }
+@media (max-width: 380px){
+  .firstContent .left-bm #titleFirstContent{
+    width: 99%;
+    font-size: 40px;
+  }
+}
