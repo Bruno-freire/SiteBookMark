@@ -161,7 +161,6 @@ header{
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  gap: 55px;
   position: relative;
   right: 25px;
   .btn-ft{
@@ -171,32 +170,25 @@ header{
     font-size: 16px;
     cursor: pointer;
     padding: 0px 5px;
-    
+    width: 10em;
     &:hover{
       color: $redColor;
-    } 
+    }
   } 
 }
-#btn-ft-3{
-  position: relative;
-  max-width: 106px;
-  text-align: center;
-  left: 18px;
-}
-.linha{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
   .btnLinha{
-    width: 200px;
+    width: 100%;
     height: auto;
     border: 0px solid transparent;
     border-bottom: 2px solid rgb(225, 223, 223);
     background-color: transparent;
   }
+.buttonsQuestions{
+  display: flex;
+  flex-direction: column;
 }
 .activated{
-  width: 200px;
+  width: 100%;
   height: auto;
   border: 0px solid transparent;
   border-bottom: 3px solid red;
@@ -248,7 +240,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 125px;
   #titleThirdContent{
     font-size: 26px;
     font-family: 'Rubik';
@@ -601,10 +593,12 @@ header{
     margin: 0;
     position: relative;
     right: 100px;
+    display: none;
   }
   .headerHamburguer{
     opacity: 1;
     margin-bottom: 4em;
+    margin-top: 3em;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -620,9 +614,10 @@ header{
   }
   .secondContent #textSecondContent{
     width: 85%;
+    margin-bottom: 4em;
   }
   .txt .divRightEvent #textEvent{
-    width: 100%;
+    width: 90%;
   }
   .div-btn-ft{
     position: initial;
@@ -652,7 +647,7 @@ header{
     width: 90%;
   }
   .fourthContent #textFourthContent{
-    width: 100%;
+    width: 90%;
   }
   .fourthContent .questions{
     width: 95%;
@@ -675,7 +670,7 @@ header{
     margin-bottom: 25px;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 426px){
   #secondSection .btnSecondSection {
     flex-direction: column;
     row-gap: 10px;
@@ -688,5 +683,23 @@ header{
     left: 265px;
     right: 0;
     top: -44px;
+  }
+  .fourthContent .questions .titleQuestion{
+  text-align: start;
+    max-width: 10em;
+  }
+  .div-btn-ft{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    top: 5em;
+    width: auto;
+  }
+  .linha{
+    opacity: 0;
+  }
+  .buttonsQuestions{
+    align-items: center;
+    width: 13em;
   }
 }
