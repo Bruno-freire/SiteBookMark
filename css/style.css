@@ -545,6 +545,71 @@ header {
   opacity: 0;
 }
 
+.eventClickHamburguer {
+  display: none;
+  flex-direction: column;
+  background-color: hsl(229deg, 31%, 21%);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  position: fixed;
+}
+.eventClickHamburguer .eventHamburguer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14em;
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTop {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14%;
+  color: rgb(255, 255, 255);
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTop > img {
+  height: 2em;
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTop > p {
+  font-size: 32px;
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTopButtons {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTopButtons .buttonsEventTop {
+  background-color: transparent;
+  color: rgb(210, 210, 210);
+  border: none;
+  border-top: 1px solid hsl(231deg, 29%, 46%);
+  border-bottom: 1px solid hsl(231deg, 29%, 46%);
+  width: 15em;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  padding: 0.8em;
+  font-family: "rubik";
+}
+.eventClickHamburguer .eventHamburguer .eventTopHamburguer .eventTopButtons .buttonsEventTop:hover {
+  margin: -1px 0px;
+  transition: 0.1s;
+  border: 2px solid rgb(255, 255, 255);
+}
+.eventClickHamburguer .eventHamburguer .eventFooterIcons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media (max-width: 1025px) {
   header {
     justify-content: space-around;
