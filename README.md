@@ -5,3 +5,6 @@ Segue o link para o projeto em construção https://bruno-freire.github.io/SiteB
 
 estou proximo de finalizar esse projeto, esta sendo maravilhoso criar ele, quebrei a cara muitas vezes mas me levantei e aprendi coisas novas, descobri formas de estilizar melhores e continua trabalhando nele.
 espero em breve estar com ele concluído, de fato, o melhor projeto que criei ate o momento.
+
+
+Finalizei meu projeto, ainda da para fazer alguns ajustes, principalmente na parte de reduzir linahs de codigo, mas me falta conhecimento no momento, esse foi meu primeiro projeto completo e estou muito feliz com o resultado, acredito que cresci e aprendi bastante enquanto trabalhava nele.
