@@ -109,8 +109,8 @@ const hamburguerActivated = document.getElementById('hamburguerActivated')
 const headerHamburguer = document.getElementById('headerHamburguerId')
 const hamburguer = document.getElementById('hamburguerId')
 document.getElementById('hamburguerId').addEventListener('click', function(){
-  headerHamburguer.style.right = '510px'
   hamburguerActivated.style.right = '0'
+  headerHamburguer.style.right = '510px' 
 })
 document.getElementById('closeButton').addEventListener('click', function(){
   headerHamburguer.style.right = '0'

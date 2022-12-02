@@ -589,7 +589,7 @@ header{
 @media(max-width: 1025px){
   header{
     justify-content: space-around;
-    .leftHeaderHamburguer{
+    .left-header{
       position:initial ;
     }
   }
@@ -663,7 +663,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    .left-header{
+    .leftHeaderHamburguer{
       position: initial;
     }
     .hamburguer > *{

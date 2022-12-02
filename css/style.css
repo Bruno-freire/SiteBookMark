@@ -613,7 +613,7 @@ header {
   header {
     justify-content: space-around;
   }
-  header .leftHeaderHamburguer {
+  header .left-header {
     position: initial;
   }
   .firstContent {
@@ -683,7 +683,7 @@ header {
     width: 100%;
     justify-content: space-around;
   }
-  .headerHamburguer .left-header {
+  .headerHamburguer .leftHeaderHamburguer {
     position: initial;
   }
   .headerHamburguer .hamburguer > * {
