@@ -105,3 +105,14 @@ document.getElementById('fourthBtnQuestion').addEventListener('click', function(
   enableOrDisableButton(4,"fourth","Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.")
 })
 
+const hamburguerActivated = document.getElementById('hamburguerActivated')
+const headerHamburguer = document.getElementById('headerHamburguerId')
+const hamburguer = document.getElementById('hamburguerId')
+document.getElementById('hamburguerId').addEventListener('click', function(){
+  headerHamburguer.style.right = '510px'
+  hamburguerActivated.style.right = '0'
+})
+document.getElementById('closeButton').addEventListener('click', function(){
+  headerHamburguer.style.right = '0'
+  hamburguerActivated.style.right = '3000px'
+})

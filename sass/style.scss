@@ -31,9 +31,6 @@ header{
   margin-bottom: 80px;
   opacity: 1;
 }
-.headerHamburguer{
-  opacity: 0;
-}
 .left-header{
   position: relative;
   right: 120px;
@@ -520,9 +517,10 @@ header{
 }
 .headerHamburguer{
   opacity: 0;
+  position: relative;
 }
 .eventClickHamburguer{
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: hsl(229, 31%, 21%);
   align-items: center;
@@ -531,6 +529,8 @@ header{
   height: 100%;
   opacity: 0.95;
   position:fixed;
+  right: 3000px;
+  transition: 0.3s;
   .eventHamburguer{
     width: 100%;
     height: 100%;
@@ -589,7 +589,7 @@ header{
 @media(max-width: 1025px){
   header{
     justify-content: space-around;
-    .left-header{
+    .leftHeaderHamburguer{
       position:initial ;
     }
   }
@@ -654,11 +654,6 @@ header{
 }
 @media (max-width: 620px){
   header{
-    opacity: 0;
-    position: absolute;
-    margin: 0;
-    position: relative;
-    right: 100px;
     display: none;
   }
   .headerHamburguer{
@@ -670,6 +665,9 @@ header{
     justify-content: space-around;
     .left-header{
       position: initial;
+    }
+    .hamburguer > *{
+      cursor: pointer;
     }
   }
   .firstContent .left-bm #titleFirstContent{
@@ -781,5 +779,8 @@ header{
   .firstContent .left-bm #titleFirstContent{
     width: 99%;
     font-size: 40px;
+  }
+  .fourthContent #titleFourthContent{
+    text-align: center;
   }
 }
