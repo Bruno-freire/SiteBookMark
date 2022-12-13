@@ -690,7 +690,7 @@ header {
     cursor: pointer;
   }
   .firstContent .left-bm #titleFirstContent {
-    width: 90%;
+    width: 93%;
   }
   .firstContent .right-bm #img-ilust {
     width: 20rem;
@@ -792,12 +792,13 @@ header {
   }
   .firstContent .left-bm #titleFirstContent {
     width: 95%;
+    font-size: 2.2em;
   }
 }
 @media (max-width: 380px) {
   .firstContent .left-bm #titleFirstContent {
     width: 99%;
-    font-size: 35px;
+    font-size: 1.8em;
   }
   .fourthContent #titleFourthContent {
     text-align: center;
