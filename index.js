@@ -112,8 +112,11 @@ const hamburguer = document.getElementById('hamburguerId')
 document.getElementById('hamburguerId').addEventListener('click', function(){
   hamburguerActivated.style.right = '0'
   headerHamburguer.style.right = '510px' 
+  document.documentElement.style.overflow = 'hidden'
+  window.scrollTo(0,0)
 })
 document.getElementById('closeButton').addEventListener('click', function(){
   headerHamburguer.style.right = '0'
   hamburguerActivated.style.right = '3000px'
+  document.documentElement.style.overflow = 'visible'
 })
