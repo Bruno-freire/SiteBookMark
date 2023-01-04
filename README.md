@@ -1,10 +1,9 @@
 # SiteBookMark
-em construção... esse projeto vou mostrar ao publico como trabalho passo a passo, infelizmente ja o começei antes de ter a ideia de publicar update por update, no momento que digito, eu reduzi 113 linhas de codigo em 58 fazendo uso de funçoes, vamos continuar o projeto.
+Site simples estático, feito para demonstrar habilidades e reutilizar códigos futuramente, no site é possivel ver uma perfeita organização de layout e responsividade, alem de interações simples com elementos da pagina.
 
-Segue o link para o projeto em construção https://bruno-freire.github.io/SiteBookMark/
+Ferramentas:
+.html5
+.css
+.javascript
 
-estou proximo de finalizar esse projeto, esta sendo maravilhoso criar ele, quebrei a cara muitas vezes mas me levantei e aprendi coisas novas, descobri formas de estilizar melhores e continua trabalhando nele.
-espero em breve estar com ele concluído, de fato, o melhor projeto que criei ate o momento.
-
-
-Finalizei meu projeto, ainda da para fazer alguns ajustes, principalmente na parte de reduzir linahs de codigo, mas me falta conhecimento no momento, esse foi meu primeiro projeto completo e estou muito feliz com o resultado, acredito que cresci e aprendi bastante enquanto trabalhava nele.
+segue o link do site: https://bruno-freire.github.io/SiteBookMark/
