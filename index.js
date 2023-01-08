@@ -1,6 +1,3 @@
-const divLeftEvent = document.getElementById('divLeftEvent')
-const divRightEvent = document.getElementById('divRightEvent')
-
 const btnFt1 = document.getElementById('btn-ft-1')
 const btnFt2 = document.getElementById('btn-ft-2')
 const btnFt3 = document.getElementById('btn-ft-3')
@@ -13,28 +10,9 @@ let firstLineActivated = true
 let secondLineActivated = false
 let thirdLineActivated = false
 
-function removeClassActivated(firstLine,btnLinha1,btnFt1,secondLine,btnLinha2,btnFt2){
-  if(firstLine == true){
-    btnLinha1.classList.remove('activated')
-    btnLinha1.classList.add('btnLinha')
-    btnFt1.style.color = 'hsl(229deg, 8%, 60%)'
-    firstLine = false
-  }
-  if(secondLine == true){
-    btnLinha2.classList.remove('activated')
-    btnLinha2.classList.add('btnLinha')
-    btnFt2.style.color = 'hsl(229deg, 8%, 60%)'
-    secondLine = false
-  }
-}
+import {removeClassActivated} from "./modules/removeClass.js"
+import { stringEvent } from "./modules/stringEvent.js"
 
-function stringEvent(btnLinha,title,text){
-  btnLinha.classList.remove('btnLinha')
-  btnLinha.classList.add('activated')
-  document.getElementById('imgLeftEvent').src="./images/illustration-features-tab-"+btnLinha.dataset.value+".svg"
-  document.getElementById('titleEvent').innerText=title
-  document.getElementById('textEvent').innerText=text
-}
 btnFt1.addEventListener('click', function(ev){
   //como btnFt termina com 1, 
   //eu faco a sequencia de botoes
