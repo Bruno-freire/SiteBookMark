@@ -10,7 +10,7 @@ let firstLineActivated = true
 let secondLineActivated = false
 let thirdLineActivated = false
 
-import {removeClassActivated} from "./modules/removeClass.js"
+import { removeClassActivated } from "./modules/removeClass.js"
 import { stringEvent } from "./modules/stringEvent.js"
 
 btnFt1.addEventListener('click', function(ev){
@@ -35,41 +35,8 @@ btnFt3.addEventListener('click', function(ev){
   thirdLineActivated=1
 })
 
-const firstArrow = document.getElementById('firstArrow')
-const secondArrow = document.getElementById('secondArrow')
-const thirdArrow = document.getElementById('thirdArrow')
-const fourthArrow = document.getElementById('fourthArrow')
-const arrowArray = [firstArrow,secondArrow,thirdArrow,fourthArrow]
+import { enableOrDisableButton } from "./modules/enableOrDisableButton.js"
 
-let firstArrowAndBtnActivated = 0
-let secondArrowAndBtnActivated = 0
-let thirdArrowAndBtnActivated = 0
-let fourthArrowAndBtnActivated = 0
-const arrowBtnArray = [firstArrowAndBtnActivated, secondArrowAndBtnActivated, thirdArrowAndBtnActivated, fourthArrowAndBtnActivated]
-
-let paragraphIndex = 0
-function addParagraph(text,questionPosition){
-  const paragraph = document.createElement('p')
-  paragraph.innerText = text
-  paragraph.id = "paragraph-"+questionPosition
-  paragraph.classList = "paragraph"
-  return paragraph
-}
-function enableOrDisableButton(position,namePosition,text){
-  const arrowBtn = arrowBtnArray[position - 1]
-  if(arrowBtn == 0){
-    document.getElementById(namePosition+'Question').appendChild(addParagraph(text,namePosition))
-    arrowBtnArray[position - 1] = 1
-    document.getElementById(namePosition+"ArrowRigth").style.opacity= "1"
-    document.getElementById(namePosition+"ArrowLeft").style.opacity = "0"
-  }
-  else{
-    document.querySelector("#paragraph-"+namePosition).remove()
-    document.getElementById(namePosition+"ArrowRigth").style.opacity = "0"
-    document.getElementById(namePosition+"ArrowLeft").style.opacity = "1"
-    arrowBtnArray[position - 1] = 0
-  }
-}
 document.getElementById('firstBtnQuestion').addEventListener('click', function(ev){
   enableOrDisableButton(1,'first',"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.")
 })
@@ -85,7 +52,6 @@ document.getElementById('fourthBtnQuestion').addEventListener('click', function(
 
 const hamburguerActivated = document.getElementById('hamburguerActivated')
 const headerHamburguer = document.getElementById('headerHamburguerId')
-const hamburguer = document.getElementById('hamburguerId')
 
 document.getElementById('hamburguerId').addEventListener('click', function(){
   hamburguerActivated.style.right = '0'
