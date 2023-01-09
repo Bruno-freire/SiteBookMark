@@ -50,17 +50,8 @@ document.getElementById('fourthBtnQuestion').addEventListener('click', function(
   enableOrDisableButton(4,"fourth","Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.")
 })
 
-const hamburguerActivated = document.getElementById('hamburguerActivated')
-const headerHamburguer = document.getElementById('headerHamburguerId')
 
-document.getElementById('hamburguerId').addEventListener('click', function(){
-  hamburguerActivated.style.right = '0'
-  headerHamburguer.style.right = '510px' 
-  document.documentElement.style.overflow = 'hidden'
-  window.scrollTo(0,0)
-})
-document.getElementById('closeButton').addEventListener('click', function(){
-  headerHamburguer.style.right = '0'
-  hamburguerActivated.style.right = '3000px'
-  document.documentElement.style.overflow = 'visible'
-})
+import { closeButton, OpenButtonHamburguer } from "./modules/handlingTextButtons.js"
+
+document.getElementById('hamburguerId').addEventListener('click', OpenButtonHamburguer)
+document.getElementById('closeButton').addEventListener('click', closeButton)
