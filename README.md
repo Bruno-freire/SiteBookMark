@@ -5,5 +5,6 @@ Ferramentas:
 .html5
 .css
 .javascript
+.Sass
 
 segue o link do site: https://bruno-freire.github.io/SiteBookMark/
