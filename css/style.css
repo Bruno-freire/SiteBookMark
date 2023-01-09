@@ -634,6 +634,14 @@ section {
   justify-content: space-evenly;
 }
 
+@media (min-width: 1500px) {
+  .txt .divLeftEvent .backgroundBlueleft {
+    display: none;
+  }
+  .firstContent .right-bm .backgroundBlueRigth {
+    display: none;
+  }
+}
 @media (max-width: 1025px) {
   header {
     justify-content: space-around;
@@ -669,9 +677,16 @@ section {
     align-items: center;
     justify-content: center;
   }
+  .firstContent .right-bm .backgroundBlueRigth {
+    top: 16em;
+    width: 50%;
+  }
   .txt {
     flex-direction: column;
     align-items: center;
+  }
+  .txt .divLeftEvent {
+    margin-bottom: 2em;
   }
   .txt .divRightEvent {
     align-items: center;
@@ -697,6 +712,9 @@ section {
   }
 }
 @media (max-width: 620px) {
+  .firstContent .right-bm {
+    margin-bottom: 2em;
+  }
   header {
     display: none;
   }
@@ -718,7 +736,7 @@ section {
     width: 93%;
   }
   .firstContent .right-bm #img-ilust {
-    width: 20rem;
+    width: 28rem;
   }
   .secondContent #textSecondContent {
     width: 85%;
@@ -743,6 +761,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .txt .divLeftEvent .backgroundBlueleft {
+    width: 60%;
   }
   .txt .divLeftEvent #imgLeftEvent {
     width: 90%;
@@ -775,6 +796,19 @@ section {
   }
 }
 @media (max-width: 484px) {
+  .firstContent .right-bm .backgroundBlueRigth {
+    top: 12em;
+    border-radius: 0em 0em 0em 5em;
+    height: 12em;
+  }
+  .firstContent .right-bm {
+    display: flex;
+    justify-content: center;
+  }
+  .firstContent .right-bm #img-ilust {
+    width: 90%;
+    height: 15em;
+  }
   .div-btn-ft {
     flex-direction: column;
     align-items: center;
@@ -798,6 +832,13 @@ section {
   }
 }
 @media (max-width: 426px) {
+  .txt .divLeftEvent {
+    margin-bottom: 3em;
+  }
+  .txt .divLeftEvent .backgroundBlueleft {
+    border-radius: 0em 0em 5em 0em;
+    height: 12em;
+  }
   #secondSection .btnSecondSection {
     flex-direction: column;
     row-gap: 10px;
@@ -824,6 +865,9 @@ section {
   .firstContent .left-bm #titleFirstContent {
     width: 99%;
     font-size: 1.8em;
+  }
+  .txt .divLeftEvent .backgroundBlueleft {
+    height: 10em;
   }
   .fourthContent #titleFourthContent {
     text-align: center;
