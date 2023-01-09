@@ -64,10 +64,14 @@ header{
     }
   }
 }
+section{
+  width: 100%;
+}
 .firstContent{
   display: flex;
-  justify-content: center;
+  width: 100%;
   column-gap: 35px;
+  justify-content: center;
   .left-bm{
     display: flex;
     margin-top: 40px;
@@ -136,6 +140,16 @@ header{
       width: 34.5rem;
       height: auto;
     }
+    .backgroundBlueRigth{
+      width: 44%;
+      height: 14em;
+      background-color: $blueColor;
+      border-radius: 20em 0 0 20em;
+      position: absolute;
+      z-index: -1;
+      right: 0em;
+      top: 20em;
+    }
   }
 }
 .secondContent{
@@ -198,6 +212,22 @@ header{
   justify-content: center;
   column-gap: 80px;
   margin-top: 50px;
+  position: relative;
+  .divLeftEvent{
+    #imgLeftEvent{
+      width: 25rem;
+    }
+    .backgroundBlueleft{
+      width: 42%;
+       height: 14em;
+       background-color: $blueColor;
+       border-radius: 0 20em 20em 0;
+       position: absolute;
+       z-index: -1;
+       left: 0em;
+       top: 4em;
+   }
+  }
   .divRightEvent{
     display: flex;
     flex-direction: column;
@@ -229,9 +259,6 @@ header{
         }
     }
   }
-}
-#imgLeftEvent{
-  width: 25rem;
 }
 
 .thirdContent{
@@ -695,7 +722,7 @@ header{
   .linha > *{
     width: 100% !important;
   }
-  .divLeftEvent{
+  .txt .divLeftEvent{
     display: flex;
     justify-content: center;
     align-items: center;

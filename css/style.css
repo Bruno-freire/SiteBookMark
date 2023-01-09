@@ -62,10 +62,15 @@ header {
   background-color: white;
 }
 
+section {
+  width: 100%;
+}
+
 .firstContent {
   display: flex;
-  justify-content: center;
+  width: 100%;
   column-gap: 35px;
+  justify-content: center;
 }
 .firstContent .left-bm {
   display: flex;
@@ -138,6 +143,16 @@ header {
   width: 34.5rem;
   height: auto;
 }
+.firstContent .right-bm .backgroundBlueRigth {
+  width: 44%;
+  height: 14em;
+  background-color: hsl(231deg, 69%, 60%);
+  border-radius: 20em 0 0 20em;
+  position: absolute;
+  z-index: -1;
+  right: 0em;
+  top: 20em;
+}
 
 .secondContent {
   display: flex;
@@ -205,6 +220,20 @@ header {
   justify-content: center;
   column-gap: 80px;
   margin-top: 50px;
+  position: relative;
+}
+.txt .divLeftEvent #imgLeftEvent {
+  width: 25rem;
+}
+.txt .divLeftEvent .backgroundBlueleft {
+  width: 42%;
+  height: 14em;
+  background-color: hsl(231deg, 69%, 60%);
+  border-radius: 0 20em 20em 0;
+  position: absolute;
+  z-index: -1;
+  left: 0em;
+  top: 4em;
 }
 .txt .divRightEvent {
   display: flex;
@@ -238,10 +267,6 @@ header {
   background-color: transparent;
   color: hsl(231deg, 69%, 60%);
   transition: 0.2s;
-}
-
-#imgLeftEvent {
-  width: 25rem;
 }
 
 .thirdContent {
@@ -714,12 +739,12 @@ header {
   .linha > * {
     width: 100% !important;
   }
-  .divLeftEvent {
+  .txt .divLeftEvent {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .divLeftEvent #imgLeftEvent {
+  .txt .divLeftEvent #imgLeftEvent {
     width: 90%;
   }
   .thirdContent #textThirdContent {
