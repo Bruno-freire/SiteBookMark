@@ -1,0 +1,21 @@
+{
+  "name": "projeto-master",
+  "description": "Site simples estático, feito para demonstrar habilidades e reutilizar códigos futuramente, no site é possivel ver uma perfeita organização de layout e responsividade, alem de interações simples com a página.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruno-freire/SiteBookMark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruno-freire/SiteBookMark/issues"
+  },
+  "homepage": "https://github.com/Bruno-freire/SiteBookMark#readme"
+}
