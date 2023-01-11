@@ -6,5 +6,7 @@ Ferramentas:
 .Css
 .Javascript
 .Sass
-
+.Node.js
+.Webpack
+.Babel
 Segue o link do site: https://bruno-freire.github.io/SiteBookMark/
