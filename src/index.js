@@ -1,3 +1,4 @@
+import '../css/style.css'
 
 const btnFt1 = document.getElementById('btn-ft-1')
 const btnFt2 = document.getElementById('btn-ft-2')
