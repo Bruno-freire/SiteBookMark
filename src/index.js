@@ -1,4 +1,3 @@
-import '../css/style.css'
 
 const btnFt1 = document.getElementById('btn-ft-1')
 const btnFt2 = document.getElementById('btn-ft-2')
@@ -19,21 +18,21 @@ btnFt1.addEventListener('click', function(ev){
   //como btnFt termina com 1, 
   //eu faco a sequencia de botoes
   //na funcao terminando com 2 e depois com 3.
+  stringEvent(btnLinha1,'Bookmark in one click','Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.')
   removeClassActivated(secondLineActivated,btnLinha2,btnFt2,thirdLineActivated,btnLinha3,btnFt3)
   ev.currentTarget.style.color = "black"
-  stringEvent(btnLinha1,'Bookmark in one click','Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.',firstLineActivated)
   firstLineActivated = 1
 })
 btnFt2.addEventListener('click', function(ev){
+  stringEvent(btnLinha2,'Intelligent search','Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.')
   removeClassActivated(firstLineActivated,btnLinha1,btnFt1,thirdLineActivated,btnLinha3,btnFt3)
   ev.currentTarget.style.color = "black"
-  stringEvent(btnLinha2,'Intelligent search','Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.',secondLineActivated)
   secondLineActivated = 1
 })
 btnFt3.addEventListener('click', function(ev){
+  stringEvent(btnLinha3,'Share your bookmarks','Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.')
   removeClassActivated(firstLineActivated,btnLinha1,btnFt1,secondLineActivated,btnLinha2,btnFt2)
   ev.currentTarget.style.color = "black"
-  stringEvent(btnLinha3,'Share your bookmarks','Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.')
   thirdLineActivated=1
 })
 
