@@ -22,3 +22,5 @@ This project was created as a Frontend Mentor challenge. Feel free to fork this 
 # License
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
+
+Follow the link to access the website:
