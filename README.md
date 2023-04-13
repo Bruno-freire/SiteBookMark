@@ -1,6 +1,6 @@
 This project is a simple landing page for a bookmark manager.
 
-#Technologies used
+# Technologies used
 
 This project was created using HTML, CSS and JavaScript. To make the JavaScript code more organized, the functionality was divided into modules and packaged with Webpack.
 #How to view
