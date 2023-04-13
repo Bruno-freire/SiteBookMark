@@ -1,13 +1,20 @@
-# SiteBookMark
-Site simples estático, feito para demonstrar habilidades e reutilizar códigos futuramente, no site é possivel ver uma perfeita organização de layout e responsividade, além de interações com a página. Treinei nele habilidades com o gerenciador de pacotes npm, usando webpack, babel e futuramente vou implantar alguma api.
+This project is a simple landing page for a bookmark manager.
+#Technologies used
 
-Ferramentas:
-.Html5
-.Css
-.Javascript
-.Sass
-.Node.js
-.Webpack
-.Babel
+This project was created using HTML, CSS and JavaScript. To make the JavaScript code more organized, the functionality was divided into modules and packaged with Webpack.
+#How to view
 
-Segue o link do site: https://bruno-freire.github.io/SiteBookMark/
+You can preview the landing page by opening the index.html file in your browser.
+Functionalities
+
+The project includes the following features:
+
+    Hamburger Menu: The hamburger menu appears when the user clicks on the hamburger icon in the upper right corner of the screen.
+    Feature Selection: The user can click on each feature button to see a description of the corresponding feature.
+    
+#Contributing
+
+This project was created as a Frontend Mentor challenge. Feel free to fork this repository and continue working on the project.
+#License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
