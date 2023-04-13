@@ -23,4 +23,4 @@ This project was created as a Frontend Mentor challenge. Feel free to fork this 
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
-Follow the link to access the website:
+Follow the link to access the website: https://bruno-freire.github.io/SiteBookMark/
